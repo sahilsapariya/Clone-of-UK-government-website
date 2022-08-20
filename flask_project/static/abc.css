@@ -1,0 +1,834 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+    font-family: "GDS Transport", arial, sans-serif;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+    font-family: "GDS Transport", arial, sans-serif;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 35%;
+    font-family: "GDS Transport", arial, sans-serif;
+  }
+}
+
+/* ******************************************************************************************* */
+/* .navbar  */
+/* css for navigation bar starts */
+nav {
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+}
+
+.navbar {
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.menu-container {
+  list-style: none;
+  float: right;
+}
+
+.menu-container button {
+  display: inline-block;
+  background-color: #000;
+  height: 4.7rem;
+}
+
+.menu-container button span i {
+  border: solid white;
+  border-width: 0 0.2rem 0.2rem 0;
+  display: inline-block;
+  padding: 0.4rem;
+  margin-bottom: 0.4rem;
+  margin-right: 0.8rem;
+}
+
+.down {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-container button:hover {
+  border-bottom: 0.4rem solid #cecece;
+}
+
+.menu-container button:hover span {
+  color: #cecece;
+}
+
+.menu-container button:hover span i {
+  color: #acacac;
+}
+
+#search-btn {
+  background-color: #1d70b8;
+  border-left: #000;
+}
+
+#search-btn a {
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+  font-size: 1.75rem;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+#search-btn:hover {
+  background-color: black;
+}
+
+.menu-container button span {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+  font-weight: bold;
+  border-left: 0.1rem solid #cecece;
+  font-size: 1.7rem;
+  height: 2rem;
+  padding: 0.7rem 2.5rem;
+}
+
+/* css for navigation bar ends */
+.nav-topics {
+  background-color: #f3f2f1;
+  padding: 0 20rem;
+  display: none;
+}
+
+.nav-topics span {
+  font-size: 2.5rem;
+  float: left;
+  width: 34%;
+  padding: 4rem 0 0 0;
+}
+
+.nav-gov-activity-1 {
+  background-color: #f3f2f1;
+  padding: 0 20rem;
+  display: none;
+}
+
+.nav-gov-activity-1 span {
+  font-size: 2.5rem;
+  float: left;
+  width: 34%;
+  padding: 4rem 0 0 0;
+}
+
+.footer-class-column-4 {
+  display: inline-block;
+  padding: 2rem 2.5rem 2rem 22rem;
+  width: 25%;
+}
+
+.footer-class-column-4 li {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  list-style: none;
+}
+
+.footer-class-column-4 li a {
+  text-decoration: none;
+  text-transform: none;
+  color: #000;
+}
+
+.footer-class-column-2 {
+  display: inline-block;
+  padding: 2rem 2.5rem 2rem 0;
+  width: 29%;
+}
+
+.footer-class-column-2 li {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  list-style: none;
+}
+
+.footer-class-column-2 li a {
+  text-decoration: none;
+  text-transform: none;
+  color: #000;
+}
+
+/* ******************************************************************************************* */
+.back-buttons ul li {
+  padding: 2rem 20rem 0 20rem;
+  list-style: none;
+}
+
+.back-buttons ul li a {
+  text-transform: none;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.back-buttons ul li span {
+  font-size: 1.5rem;
+  color: black;
+  padding: 0 0.7rem;
+}
+
+.welcome-box {
+  background-color: #1d70b8;
+}
+
+.welcome-box .welcome-content {
+  margin-left: 20rem;
+  margin-right: 20rem;
+  padding: 5rem 0;
+  color: white;
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+.welcome-box .welcome-content h1 {
+  font-weight: bold;
+  font-size: 5.3rem;
+  padding: 2rem 0;
+}
+
+.welcome-box .welcome-content .tagline {
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+
+.welcome-box .welcome-content .tagline span {
+  font-weight: bold;
+}
+
+.home-search-box {
+  padding: 3rem 20rem;
+  background-color: #f3f2f1;
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+.home-search-box .popular-topics {
+  display: inline-block;
+}
+
+.home-search-box .popular-topics h2 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.home-search-box .popular-topics ul li {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  list-style: none;
+}
+
+.home-search-box .popular-topics ul li a {
+  text-decoration: none;
+  text-transform: none;
+  color: #1d70b8;
+}
+
+.home-search-box .popular-topics a:hover {
+  font-weight: bold;
+}
+
+.home-search-box .search-box {
+  float: right;
+}
+
+.home-search-box .search-box h2 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.home-search-box .search-box input[type="text"] {
+  width: 42rem;
+  height: 3.6rem;
+  border: 0.2rem solid black;
+  font-size: 1.9rem;
+  font-family: "GDS Transport", arial, sans-serif;
+  padding: 0 0.5rem;
+}
+
+.home-search-box .search-box button[type="submit"] {
+  background-color: #1d70b8;
+  height: 4rem;
+  font-size: 1.9rem;
+  color: white;
+  border: 0;
+  width: 8.4rem;
+}
+
+.featured-uk-gov {
+  margin: 3rem 20rem;
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+.featured-uk-gov h2 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.featured-uk-gov .featured-box-1 {
+  display: inline-block;
+  width: 30%;
+  margin-right: 4.2rem;
+}
+
+.featured-uk-gov .featured-box-1 .featured-img a img {
+  width: 100%;
+  margin-right: 0.5rem;
+}
+
+.featured-uk-gov .featured-box-1 .featured-img {
+  height: 19rem;
+}
+
+.featured-uk-gov .featured-box-1 .featured-img:hover {
+  -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+}
+
+.featured-uk-gov .featured-box-1 .featured-link {
+  float: left;
+  padding: 1rem 0;
+}
+
+.featured-uk-gov .featured-box-1 .featured-link a {
+  font-weight: bold;
+  text-transform: none;
+  text-decoration: none;
+  color: #4c2c92;
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+}
+
+.featured-uk-gov .featured-box-1 .featured-text {
+  font-size: 1.8rem;
+  float: left;
+}
+
+.section-border {
+  margin: 0 20rem;
+  border-top: 0.3rem solid black;
+}
+
+.more-gov {
+  margin: 1rem 20rem;
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+.more-gov h2 {
+  font-weight: bold;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.more-gov .more-links {
+  width: 50%;
+}
+
+.more-gov .more-links li {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  list-style: none;
+}
+
+.more-gov .more-links li a {
+  text-decoration: none;
+  text-transform: none;
+  color: #1d70b8;
+}
+
+.more-gov .more-links a:hover {
+  font-weight: bold;
+}
+
+.short-feedback {
+  margin: 5rem 20rem 0 20rem;
+  background-color: #1d70b8;
+  font-family: "GDS Transport", arial, sans-serif;
+  font-size: 2rem;
+  color: white;
+  border: 0.1rem solid white;
+}
+
+.short-feedback .usefull-or-not {
+  padding: 0.5rem 0;
+  display: inline-block;
+  padding: 3rem;
+}
+
+.short-feedback .usefull-or-not button {
+  margin: 0 1rem;
+  padding: 0.5rem 3.5rem;
+  font-size: 1.5rem;
+  font-family: "GDS Transport", arial, sans-serif;
+  background-color: #1d70b8;
+  border: 0.1rem solid white;
+  border-bottom: 0.3rem solid white;
+  color: white;
+}
+
+.short-feedback .report-problem {
+  float: right;
+  padding: 3rem;
+}
+
+.short-feedback .report-problem button {
+  margin: 0 1rem;
+  padding: 0.5rem 3.5rem;
+  font-size: 1.5rem;
+  font-family: "GDS Transport", arial, sans-serif;
+  background-color: #1d70b8;
+  border: 0.1rem solid white;
+  border-bottom: 0.3rem solid white;
+  color: white;
+}
+
+.main-bottom-border {
+  border: 0.5rem solid #1d70b8;
+}
+
+.footer-container {
+  padding: 1.5rem 20rem;
+  background-color: #f3f2f1;
+}
+
+.footer-topics {
+  font-family: "GDS Transport", arial, sans-serif;
+  width: 66%;
+  padding: 0 0.1rem;
+  display: inline-block;
+}
+
+.footer-topics h2 {
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.footer-topics .footer-class-column-1 {
+  display: inline-block;
+  padding: 2rem 2.5rem 2rem 0;
+}
+
+.footer-topics .footer-class-column-1 li {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  list-style: none;
+}
+
+.footer-topics .footer-class-column-1 li a {
+  text-decoration: none;
+  text-transform: none;
+  color: #000;
+}
+
+.footer-govern-activity {
+  font-family: "GDS Transport", arial, sans-serif;
+  width: 33%;
+  float: right;
+  padding: 0 0.1rem;
+}
+
+.footer-govern-activity h2 {
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.footer-govern-activity .footer-class-column-3 {
+  padding: 2rem 5rem 2rem 0;
+  display: inline-block;
+}
+
+.footer-govern-activity .footer-class-column-3 li {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  list-style: none;
+}
+
+.footer-govern-activity .footer-class-column-3 li a {
+  text-decoration: none;
+  text-transform: none;
+  color: #000;
+}
+
+.bottom-div {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.footer-links {
+  font-family: "GDS Transport", arial, sans-serif;
+  width: 70%;
+  display: inline-block;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  list-style: none;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  text-transform: none;
+  color: #000;
+  border-bottom: 0.1rem solid #000;
+}
+
+.footer-links li:hover a {
+  border-bottom: 0.3rem solid #000;
+}
+
+.footer-links li a:focus {
+  background-color: yellow;
+}
+
+.footer-logo {
+  float: right;
+}
+
+.footer-logo img {
+  height: 12.5rem;
+}
+
+.topic {
+  padding: 0 20rem;
+}
+
+.topic-heading {
+  padding: 2rem 0;
+}
+
+.topic-heading ul {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 17rem 17rem 17rem 17rem;
+      grid-template-rows: 17rem 17rem 17rem 17rem;
+}
+
+.topic-title h2 {
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+.topic-heading ul li {
+  list-style: none;
+}
+
+.topic-heading ul li i {
+  border: solid #1d70b8;
+  border-width: 0.2rem 0.2rem 0 0;
+  padding: 0.4rem;
+  float: right;
+  margin-top: 2rem;
+}
+
+.topic-heading ul li .right {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.box {
+  border-top: 0.1rem solid grey;
+  margin: 0 2rem 1rem 0;
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+.box h3 {
+  margin: 1.5rem 2.5rem 1.5rem 0;
+}
+
+.box h3 a {
+  font-size: 1.9rem;
+  text-transform: none;
+  text-decoration: none;
+  color: #1d70b8;
+  border-bottom: 0.1rem solid #1d70b8;
+}
+
+.box h3:hover a {
+  color: #230563;
+  font-weight: bold;
+  border-bottom: 0.3rem solid #230563;
+}
+
+.box p {
+  padding: 0.5rem 0 2rem 0;
+  font-size: 1.9rem;
+}
+
+.government-activity {
+  padding: 0 20rem;
+}
+
+.sub-government-activity {
+  display: inline-block;
+}
+
+.sub-government-activity ul {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 12rem 12rem 12rem;
+      grid-template-rows: 12rem 12rem 12rem;
+}
+
+.government-activiy-subtitle p {
+  font-size: 2.5rem;
+  padding-bottom: 3rem;
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+.government-activity-title {
+  padding-top: 2rem;
+}
+
+.government-activity-title h2 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+.department {
+  float: right;
+  width: 33%;
+}
+
+.department ul li {
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.department ul li a:hover {
+  color: #230563;
+}
+
+.department ul li a {
+  font-weight: bold;
+  text-transform: none;
+  text-decoration: none;
+  color: #1d70b8;
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+.sub-para {
+  font-size: 1.8rem;
+}
+
+.department-number {
+  font-size: 8rem;
+}
+
+.main-search {
+  padding: 0 20rem 5rem 20rem;
+}
+
+.main-search .search-title {
+  font-size: 4.8rem;
+  padding: 1.5rem 0;
+  font-weight: bold;
+}
+
+.main-search #search-textbox {
+  width: 50rem;
+  height: 4rem;
+  border: 0.3rem solid black;
+  padding: 0 0.3rem;
+  font-size: 2rem;
+  border-right: none;
+}
+
+.main-search button[type='submit'] {
+  width: 10rem;
+  height: 4.56rem;
+  background-color: #1d70b8;
+  color: white;
+  font-size: 2.2rem;
+  border: none;
+}
+
+.blank-space {
+  margin-top: 60px;
+}
+
+.contact-form-links p a {
+  text-decoration: none;
+  text-transform: none;
+  color: #1d70b8;
+  border-bottom: 0.1rem solid #1d70b8;
+}
+
+.contact-form-links p a:hover {
+  color: #230563;
+  border-bottom: 0.3rem solid #230563;
+}
+
+.contact-form-para p {
+  font-size: 1.9rem;
+  padding: 1.5rem 0;
+}
+
+.form-1 h2 {
+  font-size: 2.5rem;
+  padding: 2rem 0;
+}
+
+.form-1 p {
+  font-size: 1.9rem;
+  padding: 1rem 0 2rem 0;
+  color: #505a5f;
+}
+
+.alert-black {
+  font-size: 1.9rem;
+  padding: 2rem 2rem;
+  border-left: 0.4rem solid #000;
+  background-color: #f3f3f3;
+}
+
+.alert-black p {
+  font-size: 1.9rem;
+  color: #505a5f;
+}
+
+.text-area {
+  padding: 2rem 0;
+}
+
+.text-area textarea {
+  width: 98%;
+  height: 15.5rem;
+  font-size: 1.9rem;
+  padding: 0.5rem;
+  border: 0.3rem solid black;
+}
+
+.email-button a {
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+  background-color: #1d70b8;
+}
+
+.reply h2 {
+  padding: 1rem 0;
+  font-size: 1.9rem;
+}
+
+.reply label {
+  font-size: 1.9rem;
+  padding: 1rem 0;
+}
+
+.reply #citizen-name {
+  width: 98%;
+  border: 0.2rem solid;
+  padding: 0.3rem;
+  margin: 1rem 0 4rem 0;
+  font-size: 1.9rem;
+}
+
+.reply #citizen-email {
+  width: 98%;
+  border: 0.2rem solid;
+  padding: 0.3rem;
+  margin: 1rem 0 4rem 0;
+  font-size: 1.9rem;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 4rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  font-size: 2.2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: -3;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+}
+/*# sourceMappingURL=abc.css.map */

@@ -1,0 +1,10 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_url": "mysql://root:@localhost/uk gov",
+    "prod_url": "mysql://root:@localhost/uk gov",
+    "gmail-username": "sahileng03@gmail.com",
+    "gmail-password":"oqzoswubjjxgxcms"
+  }
+}

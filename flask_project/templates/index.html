@@ -1,0 +1,251 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<!-- Welcome box starts here -->
+<div class="welcome-box">
+    <div class="welcome-content">
+        <h1>Welcome to Government of UK</h1>
+        <div class="tagline">
+            The best place to find government services and information <br>
+            <span>Simpler, clearer, faster</span>
+        </div>
+    </div>
+</div>
+<!-- Welcome box ends here -->
+<!-- search box section starts here -->
+<div class="home-search-box">
+    <div class="popular-topics">
+        <h2>Popular on GOV.UK</h2>
+        <ul>
+            <li><a href="#">Moving to the UK from Ukraine</a></li>
+            <li><a href="#">Coronavirus (COVID-19)</a></li>
+            <li><a href="#">Find a job</a></li>
+            <li><a href="#">sersonal tax account: sign in</a></li>
+            <li><a href="#">Credit account: sign in</a></li>
+        </ul>
+    </div>
+    <div class="search-box">
+        <h2>Search</h2>
+        <form action="/search">
+            <input name="search" type="text"><button type="submit">Search</button>
+        </form>
+    </div>
+</div>
+<!-- search box section ends here -->
+<!-- Topics of uk government starts here  -->
+<section class="topic">
+    <div class="topic-heading">
+        <div class="topic-title">
+            <h2>Topics</h2>
+        </div>
+        <ul>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Benefits</a></h3>
+                    <p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Births, deaths, marriages and care</a></h3>
+                    <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Business and self-employed</a></h3>
+                    <p>Tools and guidance for businesses</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Childcare and parenting</a></h3>
+                    <p>Includes giving birth, fostering, adopting, benefits for children, childcare and schools</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Citizenship and living in the UK</a></h3>
+                    <p>Voting, community participation, life in the UK, international projects</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Crime, justice and the law</a></h3>
+                    <p>Legal processes, courts and the police</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Disabled people</a></h3>
+                    <p>Includes carers, your rights, benefits and the Equality Act</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Driving and transport</a></h3>
+                    <p>Includes vehicle tax, MOT and driving licences</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Education and learning</a></h3>
+                    <p>Includes student loans, admissions and apprenticeships</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Employing people</a></h3>
+                    <p>Includes pay, contracts, hiring and redundancies</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- Topics of uk government ends here  -->
+<!-- government Activity starts here  -->
+<section class="government-activity">
+    <div class="sub-government-activity topic-heading" style="width: 65%; padding-top: 0;">
+        <div class="section-border" style="margin: 0 0rem; width: 95%;display: inline-block;"></div>
+        <div class="government-activity-title">
+            <h2>Government activity</h2>
+        </div>
+        <div class="government-activiy-subtitle">
+            <p>Find out what the government is doing</p>
+        </div>
+        <ul>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Departments</a></h3>
+                    <p>Departments, agencies and public bodies</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Research and statistics</a></h3>
+                    <p>Reports, analysis and official statistics</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">News</a></h3>
+                    <p>News stories, speeches, letters and notices</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Policy papers and consultations</a></h3>
+                    <p>Consultations and strategy</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Guidance and regulation</a></h3>
+                    <p>Detailed guidance, regulations and rules</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <i class="right"></i>
+                    <h3><a href="#">Transparency documents</a></h3>
+                    <p>Data, Freedom of Information releases and corporate reports</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="department" style="padding-top: 0.6rem;">
+        <div class="section-border" style="margin: 0 0rem;"></div>
+        <div class="department-title government-activity-title">
+            <h2>Departments and organisations</h2>
+        </div>
+        <ul>
+            <li><a href="#">
+                    <p class="department-number">23</p>
+                    <p class="sub-para"><u>Ministerial departments</u></p>
+                </a></li>
+            <li><a href="#">
+                    <p class="department-number">400+</p>
+                    <p class="sub-para"><u>Other agencies and public bodies</u></p>
+                </a></li>
+        </ul>
+    </div>
+</section>
+<!-- government Activity ends here  -->
+<div class="section-border"></div>
+<!-- featured of home page starts here  -->
+<div class="featured-uk-gov">
+    <h2>Featured</h2>
+    <div class="featured-container">
+        <div class="featured-box-1">
+            <div class="featured-img">
+                <a href="#"><img src="{{ url_for('static', filename='images/feature 1.jpg') }}"></a>
+            </div>
+            <div class="featured-link">
+                <a href="#"><u>Cost of living</u></a>
+            </div>
+            <div class="featured-text">
+                Find out what financial support is available from the government.
+            </div>
+        </div>
+        <div class="featured-box-1">
+            <div class="featured-img">
+                <a href="#"><img src="{{ url_for('static', filename='images/feature 2.jpg') }}"></a>
+            </div>
+            <div class="featured-link">
+                <a href="#"><u>War in Ukraine</u></a>
+            </div>
+            <div class="featured-text">
+                Find out about the UK's response to the Russian government's invasion of Ukraine
+            </div>
+        </div>
+        <div class="featured-box-1" style="margin-right: 0px;">
+            <div class="featured-img">
+                <a href="#"><img src="{{ url_for('static', filename='images/feature 3.png') }}"></a>
+            </div>
+            <div class="featured-link">
+                <a href="#"><u>Travel abroad</u></a>
+            </div>
+            <div class="featured-text">
+                Check the rules on COVID-19 for travelling abroad.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- featured of home page ends here  -->
+<div class="section-border"></div>
+<!-- More on Gov.uk section  -->
+<!-- More on Gov.uk section starts here -->
+<div class="more-gov">
+    <h2>More on GOV.UK</h2>
+    <div class="more-links" style="display: inline-block;">
+        <li><a href="#">HMRC services: sign in</a></li>
+        <li><a href="#">Check MOT history of a vehicle</a></li>
+        <li><a href="#">Tax your vehicle</a></li>
+        <li><a href="#">Universal Credit</a></li>
+        <li><a href="#">Foreign travel advice</a></li>
+    </div>
+    <div class="more-links" style="float: right;">
+        <li><a href="#">Check your State Pension age</a></li>
+        <li><a href="#">Childcare account: sign in</a></li>
+        <li><a href="#">Student finance: sign in</a></li>
+        <li><a href="#">Self Assessment tax returns</a></li>
+        <li><a href="#">Apply for a passport</a></li>
+    </div>
+</div>
+<!-- More on Gov.uk section ends here -->
+{% endblock %}

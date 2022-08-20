@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="back-buttons">
+    <ul>
+        <li><a href="/"><u>Home</u></a></li>
+    </ul>
+</div>
+<div class="main-search">
+    <div class="search-title">
+        Search
+    </div>
+    <!-- <form action="seachList()"> -->
+        <input type="text" id="search-textbox" onkeyup="searchList()"><button type="submit">Search</button>
+    <!-- </form> -->
+    <div class="blank-space"></div>
+    <div class="box search-page-list">
+        <h3><a href="#">Sign in to your Universal Credit account</a></h3>
+        <p>Sign in to your Universal Credit account - report a change, add a note to your journal, see your payments and do other tasks</p>
+    </div>
+    <div class="box search-page-list">
+        <h3><a href="#">HMRC services: sign in or register</a></h3>
+        <p>Sign in or register for your personal or business tax account, Self Assessment, Corporation Tax, PAYE for employers, VAT and other services</p>
+    </div>
+    <div class="box search-page-list">
+        <h3><a href="#">Check the MOT history of a vehicle</a></h3>
+        <p>Check the MOT history of a vehicle from 2005 onwards, including if it passed or failed, its mileage and why it failed
+
+        </p>
+    </div>
+    <div class="box search-page-list">
+        <h3><a href="#">Get information about a company</a></h3>
+        <p>Get company information including registered address, previous company names, directors' details, accounts, annual returns and company reports, if it's been dissolved</p>
+    </div>
+    <div class="box search-page-list">
+        <h3><a href="#">Report a COVID-19 rapid lateral flow test result</a></h3>
+        <p>Report your result after using a COVID-19 rapid lateral flow test. Find out what your result means and what you must do.</p>
+    </div>
+    <div class="box search-page-list">
+        <h3><a href="#">Tax your vehicle</a></h3>
+        <p>Renew or tax your vehicle for the first time using a reminder letter, your log book or the green 'new keeper' slip - and how to tax if you do not have any documents</p>
+    </div>
+    <div class="box search-page-list">
+        <h3><a href="#">Companies House</a></h3>
+        <p>The home of Companies House on GOV.UK. We incorporate and dissolve limited companies. We register company information and make it available to the public.</p>
+    </div>
+    <div class="box search-page-list">
+        <h3><a href="#">Check if a vehicle is taxed</a></h3>
+        <p>Check and report if a vehicle has up-to-date vehicle tax or is 'off road' (SORN)</p>
+    </div>
+    <div class="box search-page-list">
+        <h3><a href="#">View or share your driving licence information</a></h3>
+        <p>Find out what information DVLA holds about your driving licence or create a check code to share your driving record, for example to hire a car</p>
+    </div>
+</div>
+
+<!-- <script src="{{ url_for('static', filename='search.js') }}"></script> -->
+{% endblock %}

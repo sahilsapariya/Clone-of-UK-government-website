@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='abc.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/fav-icon.png') }}">
+    <title>Welcome to GOV.UK</title>
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <nav>
+        <div class="navbar">
+            <img src="{{ url_for('static', filename='images/GOV-UK-logo.png') }}" style="height: 4.8rem;">
+            <div class="menu-container">
+
+                <button id="navtopic" onclick="showTopics('navtopics', 'navgovactivity', 'navtopic', 'navgovernmentactivity')"><span><i class="down"></i>Topic</span></button>
+                <button id="navgovernmentactivity" onclick="showActivity('navgovactivity', 'navtopics', 'navgovernmentactivity', 'navtopic')"><span><i class="down"></i>Government
+                        Activity</a></span></button>
+                <button id="search-btn"><a href="/search">Search</a></button>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+    <div class="nav-topics" id="navtopics">
+        <span>Find information and services</span>
+        <div class="footer-class-column-2">
+            <li><a href="#"><u>Benefits</u></a></li>
+            <li><a href="#"><u>Births, death, marriages and care</u></a></li>
+            <li><a href="#"><u>Business and self-employed</u></a></li>
+            <li><a href="#"><u>Childcare and parenting</u></a></li>
+            <li><a href="#"><u>Citizenship and living in the UK</u></a></li>
+            <li><a href="#"><u>Crime, justice and the law</u></a></li>
+            <li><a href="#"><u>Disabled people</u></a></li>
+            <li><a href="#"><u>Driving and transport</u></a></li>
+        </div>
+        <div class="footer-class-column-2" style="float: right;">
+            <li><a href="#"><u>Education and learning</u></a></li>
+            <li><a href="#"><u>Employing people</u></a></li>
+            <li><a href="#"><u>Environment and countryside</u></a></li>
+            <li><a href="#"><u>Housing and local services</u></a></li>
+            <li><a href="#"><u>Money and tax</u></a></li>
+            <li><a href="#"><u>Passports, travel and living abroad</u></a></li>
+            <li><a href="#"><u>Visas and immigration</u></a></li>
+            <li><a href="#"><u>Working, jobs and pensions</u></a></li>
+        </div>
+    </div>
+
+
+    <div class="nav-gov-activity-1" id="navgovactivity">
+        <span>Search for a department and find out what the government is doing</span>
+        <div class="footer-class-column-4">
+            <li><a href="#"><u>Departments</u></a></li>
+            <li><a href="#"><u>News</u></a></li>
+            <li><a href="#"><u>Guidance and regulation</u></a></li>
+            <li><a href="#"><u>Research and statistics</u></a></li>
+            <li><a href="#"><u>Policy papers and consultations</u></a></li>
+            <li><a href="#"><u>Transparency</u></a></li>
+            <li><a href="#"><u>How government works</u></a></li>
+            <li><a href="#"><u>Get involved</u></a></li>
+        </div>
+    </div>
+
+
+
+    <div class="main-bottom-border" style="margin-top: -0.2rem; padding: 0 20rem;"></div>
+    
+    {% block body %} {% endblock %}
+
+
+    <!-- short feedback form starts here -->
+    <div class="short-feedback">
+        <div class="usefull-or-not" style="display: none;" id="thankyou-display">
+            Thank you for your feedback
+        </div>
+        <div class="usefull-or-not" id="usefull-or-not">
+            Is this page helpful?<button type="submit" id="yes-btn" onClick="yes('usefull-or-not', 'report_problem', 'thankyou-display')">Yes</button><button type="submit" id="no-btn">No</button>
+        </div>
+        <div class="report-problem" id="report_problem">
+            <button type="submit">Report a problem with this page</button>
+        </div>
+    </div>
+    <!-- short feedback form ends here -->
+
+
+
+
+    <div class="main-bottom-border"></div>
+
+    <!-- footer section starts here  -->
+    <footer>
+        <div class="footer-container">
+            <div class="upper-div">
+                <div class="footer-class">
+                    <div class="footer-topics" id="footertopics">
+                        <h2>Topics</h2>
+                        <hr>
+                        <div class="footer-class-column-1">
+                            <li><a href="#"><u>Benefits</u></a></li>
+                            <li><a href="#"><u>Births, death, marriages and care</u></a></li>
+                            <li><a href="#"><u>Business and self-employed</u></a></li>
+                            <li><a href="#"><u>Childcare and parenting</u></a></li>
+                            <li><a href="#"><u>Citizenship and living in the UK</u></a></li>
+                            <li><a href="#"><u>Crime, justice and the law</u></a></li>
+                            <li><a href="#"><u>Disabled people</u></a></li>
+                            <li><a href="#"><u>Driving and transport</u></a></li>
+                        </div>
+                        <div class="footer-class-column-1" style="float: right;">
+                            <li><a href="#"><u>Education and learning</u></a></li>
+                            <li><a href="#"><u>Employing people</u></a></li>
+                            <li><a href="#"><u>Environment and countryside</u></a></li>
+                            <li><a href="#"><u>Housing and local services</u></a></li>
+                            <li><a href="#"><u>Money and tax</u></a></li>
+                            <li><a href="#"><u>Passports, travel and living abroad</u></a></li>
+                            <li><a href="#"><u>Visas and immigration</u></a></li>
+                            <li><a href="#"><u>Working, jobs and pensions</u></a></li>
+                        </div>
+                    </div>
+
+                    <div class="footer-govern-activity">
+                        <h2>Government Activity</h2>
+                        <hr>
+                        <div class="footer-class-column-3">
+                            <li><a href="#"><u>Departments</u></a></li>
+                            <li><a href="#"><u>News</u></a></li>
+                            <li><a href="#"><u>Guidance and regulation</u></a></li>
+                            <li><a href="#"><u>Research and statistics</u></a></li>
+                            <li><a href="#"><u>Policy papers and consultations</u></a></li>
+                            <li><a href="#"><u>Transparency</u></a></li>
+                            <li><a href="#"><u>How government works</u></a></li>
+                            <li><a href="#"><u>Get involved</u></a></li>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="bottom-div">
+                <div class="footer-links">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Accessibility statement</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Rhestr o Wasanaethau Cymraeg</a></li>
+                    <li><a href="#">Government Digital Service</a></li>
+                </div>
+                <div class="footer-logo">
+                    <img src="{{ url_for('static', filename='images/uk footer logo.png') }}">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer section ends here  -->
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>
